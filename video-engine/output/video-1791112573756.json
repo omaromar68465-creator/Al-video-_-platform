@@ -1,0 +1,83 @@
+{
+  "title": "فيديو جديد",
+  "description": "دراسة",
+  "videoType": "رسوم متحركة",
+  "duration": 1,
+  "textOption": "بدون نص",
+  "extraText": "",
+  "sceneTexts": [],
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "duration": 8,
+      "purpose": "المشهد 1 من فيديو عن: دراسة",
+      "visualPrompt": "المشهد 1 من فيديو رسوم متحركة: دراسة. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-1.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1791112469463-1.mp4"
+    },
+    {
+      "sceneNumber": 2,
+      "duration": 8,
+      "purpose": "المشهد 2 من فيديو عن: دراسة",
+      "visualPrompt": "المشهد 2 من فيديو رسوم متحركة: دراسة. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-2.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1791112483472-2.mp4"
+    },
+    {
+      "sceneNumber": 3,
+      "duration": 8,
+      "purpose": "المشهد 3 من فيديو عن: دراسة",
+      "visualPrompt": "المشهد 3 من فيديو رسوم متحركة: دراسة. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-3.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1791112500419-3.mp4"
+    },
+    {
+      "sceneNumber": 4,
+      "duration": 8,
+      "purpose": "المشهد 4 من فيديو عن: دراسة",
+      "visualPrompt": "المشهد 4 من فيديو رسوم متحركة: دراسة. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-4.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1791112515203-4.mp4"
+    },
+    {
+      "sceneNumber": 5,
+      "duration": 8,
+      "purpose": "المشهد 5 من فيديو عن: دراسة",
+      "visualPrompt": "المشهد 5 من فيديو رسوم متحركة: دراسة. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-5.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1791112532297-5.mp4"
+    },
+    {
+      "sceneNumber": 6,
+      "duration": 8,
+      "purpose": "المشهد 6 من فيديو عن: دراسة",
+      "visualPrompt": "المشهد 6 من فيديو رسوم متحركة: دراسة. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-6.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1791112543837-6.mp4"
+    },
+    {
+      "sceneNumber": 7,
+      "duration": 8,
+      "purpose": "المشهد 7 من فيديو عن: دراسة",
+      "visualPrompt": "المشهد 7 من فيديو رسوم متحركة: دراسة. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-7.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1791112554480-7.mp4"
+    },
+    {
+      "sceneNumber": 8,
+      "duration": 4,
+      "purpose": "المشهد 8 من فيديو عن: دراسة",
+      "visualPrompt": "المشهد 8 من فيديو رسوم متحركة: دراسة. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-8.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1791112570301-8.mp4"
+    }
+  ]
+}

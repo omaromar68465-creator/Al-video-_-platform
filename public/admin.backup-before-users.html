@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة المشرف - استوديو الفيديو</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef7ff;
+      color: #222;
+    }
+
+    header {
+      background: #6c4ab6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 25px auto;
+      padding: 0 15px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #6c4ab6;
+    }
+
+    .status {
+      padding: 12px;
+      border-radius: 10px;
+      background: #e8f7e8;
+      color: #216b21;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>لوحة المشرف</h1>
+  <p>إدارة منصة إنشاء الفيديو</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>مرحباً بك أيها المشرف 👋</h2>
+    <div id="adminInfo" class="status">
+      جاري التحقق من صلاحيات المشرف...
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>إدارة المستخدمين</h2>
+    <p>سيتم هنا لاحقاً إضافة البحث عن المستخدمين وإدارة الحسابات والنقاط.</p>
+  </div>
+
+  <div class="card">
+    <h2>إدارة النقاط</h2>
+    <p>سيتم هنا لاحقاً إضافة إضافة وخصم النقاط وسجل العمليات.</p>
+  </div>
+
+  <div class="card">
+    <h2>طلبات شراء النقاط</h2>
+    <p>سيتم هنا لاحقاً إضافة مراجعة طلبات الدفع والموافقة عليها أو رفضها.</p>
+  </div>
+
+</div>
+
+<script>
+fetch("/api/admin/test")
+  .then(response => {
+    if (!response.ok) {
+      throw new Error("غير مصرح");
+    }
+    return response.json();
+  })
+  .then(data => {
+    document.getElementById("adminInfo").innerHTML =
+      "تم التحقق بنجاح ✅<br>" +
+      "المشرف: " + data.admin.name + "<br>" +
+      "البريد: " + data.admin.email;
+  })
+  .catch(() => {
+    document.getElementById("adminInfo").textContent =
+      "غير مصرح لك بالدخول إلى لوحة المشرف.";
+  });
+</script>
+
+</body>
+</html>

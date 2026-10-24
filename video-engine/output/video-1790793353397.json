@@ -1,0 +1,92 @@
+{
+  "title": "فيديو جديد",
+  "description": "أشجار",
+  "videoType": "تلقائي",
+  "duration": 1,
+  "textOption": "نص مخصص",
+  "extraText": "",
+  "sceneTexts": [
+    "الأشجار كبيرة",
+    "الأشجار جميلة",
+    "الأشجار تمتص ثاني أكسيد الكربون",
+    "الأشجار مثمرة",
+    "الأشجار خطاء مناسب",
+    "أنا اريد جعل الأشجار من أساسيات البنة التحتية",
+    "تحن نبني لأجل الغير",
+    "واجب علينا حماية البيئة"
+  ],
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "duration": 8,
+      "purpose": "المشهد 1 من فيديو عن: أشجار",
+      "visualPrompt": "المشهد 1 من فيديو تلقائي: أشجار. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "الأشجار كبيرة",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-1.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790793233716-1.mp4"
+    },
+    {
+      "sceneNumber": 2,
+      "duration": 8,
+      "purpose": "المشهد 2 من فيديو عن: أشجار",
+      "visualPrompt": "المشهد 2 من فيديو تلقائي: أشجار. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "الأشجار جميلة",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-2.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790793250739-2.mp4"
+    },
+    {
+      "sceneNumber": 3,
+      "duration": 8,
+      "purpose": "المشهد 3 من فيديو عن: أشجار",
+      "visualPrompt": "المشهد 3 من فيديو تلقائي: أشجار. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "الأشجار تمتص ثاني أكسيد الكربون",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-3.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790793270114-3.mp4"
+    },
+    {
+      "sceneNumber": 4,
+      "duration": 8,
+      "purpose": "المشهد 4 من فيديو عن: أشجار",
+      "visualPrompt": "المشهد 4 من فيديو تلقائي: أشجار. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "الأشجار مثمرة",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-4.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790793285317-4.mp4"
+    },
+    {
+      "sceneNumber": 5,
+      "duration": 8,
+      "purpose": "المشهد 5 من فيديو عن: أشجار",
+      "visualPrompt": "المشهد 5 من فيديو تلقائي: أشجار. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "الأشجار خطاء مناسب",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-5.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790793299426-5.mp4"
+    },
+    {
+      "sceneNumber": 6,
+      "duration": 8,
+      "purpose": "المشهد 6 من فيديو عن: أشجار",
+      "visualPrompt": "المشهد 6 من فيديو تلقائي: أشجار. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "أنا اريد جعل الأشجار من أساسيات البنة التحتية",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-6.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790793315314-6.mp4"
+    },
+    {
+      "sceneNumber": 7,
+      "duration": 8,
+      "purpose": "المشهد 7 من فيديو عن: أشجار",
+      "visualPrompt": "المشهد 7 من فيديو تلقائي: أشجار. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "تحن نبني لأجل الغير",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-7.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790793327379-7.mp4"
+    },
+    {
+      "sceneNumber": 8,
+      "duration": 4,
+      "purpose": "المشهد 8 من فيديو عن: أشجار",
+      "visualPrompt": "المشهد 8 من فيديو تلقائي: أشجار. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "واجب علينا حماية البيئة",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-8.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790793349453-8.mp4"
+    }
+  ]
+}

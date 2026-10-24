@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة المشرف</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #eef7ff;
+      color: #222;
+    }
+
+    header {
+      background: #6c4ab6;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 25px auto;
+      padding: 0 15px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #6c4ab6;
+      margin-top: 0;
+    }
+
+    .status {
+      padding: 12px;
+      border-radius: 10px;
+      background: #e8f7e8;
+      color: #216b21;
+      margin-bottom: 15px;
+    }
+
+    .error {
+      background: #ffe8e8;
+      color: #9b2222;
+    }
+
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+
+    .user {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 12px;
+    }
+
+    .user strong {
+      color: #6c4ab6;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 9px;
+      border-radius: 8px;
+      background: #eee;
+      margin-top: 7px;
+      font-size: 13px;
+    }
+
+    .pointsBox {
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #eee;
+    }
+
+    .pointsInput {
+      margin-bottom: 8px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 9px;
+      padding: 10px 14px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-left: 6px;
+      margin-top: 5px;
+    }
+
+    .addBtn {
+      background: #2e8b57;
+      color: white;
+    }
+
+    .subtractBtn {
+      background: #c0392b;
+      color: white;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .actionMessage {
+      margin-top: 8px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>لوحة المشرف</h1>
+  <p>إدارة منصة إنشاء الفيديو</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>معلومات المشرف</h2>
+    <div id="adminInfo" class="status">
+      جاري التحقق من صلاحيات المشرف...
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>إدارة المستخدمين</h2>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="ابحث بالاسم أو البريد الإلكتروني..."
+    >
+
+    <div id="usersStatus" class="status">
+      جاري تحميل المستخدمين...
+    </div>
+
+    <div id="usersList"></div>
+  </div>
+
+  <div class="card">
+    <h2>سجل عمليات النقاط</h2>
+
+    <div id="transactionsStatus" class="status">
+      جاري تحميل سجل العمليات...
+    </div>
+
+    <div id="transactionsList"></div>
+  </div>
+
+</div>
+
+<script>
+let allUsers = [];
+
+async function loadAdmin() {
+  try {
+    const response = await fetch("/api/admin/test");
+
+    if (!response.ok) {
+      throw new Error("غير مصرح");
+    }
+
+    const data = await response.json();
+
+    document.getElementById("adminInfo").innerHTML =
+      "تم التحقق بنجاح ✅<br>" +
+      "المشرف: " + escapeHtml(data.admin.name) + "<br>" +
+      "البريد: " + escapeHtml(data.admin.email);
+
+    loadUsers();
+    loadTransactions();
+
+  } catch (error) {
+    const box = document.getElementById("adminInfo");
+    box.textContent = "غير مصرح لك بالدخول إلى لوحة المشرف.";
+    box.classList.add("error");
+  }
+}
+
+async function loadTransactions() {
+  try {
+    const response = await fetch("/api/admin/transactions");
+
+    if (!response.ok) {
+      throw new Error("تعذر تحميل سجل العمليات");
+    }
+
+    const data = await response.json();
+    const transactions = data.transactions || [];
+
+    const status = document.getElementById("transactionsStatus");
+    const list = document.getElementById("transactionsList");
+
+    status.textContent = "عدد العمليات: " + transactions.length;
+    list.innerHTML = "";
+
+    if (transactions.length === 0) {
+      list.innerHTML = "<p>لا توجد عمليات حتى الآن.</p>";
+      return;
+    }
+
+    [...transactions].reverse().forEach(transaction => {
+      const div = document.createElement("div");
+      div.className = "user";
+
+      const actionText =
+        transaction.type === "add_points"
+          ? "إضافة نقاط ✅"
+          : "خصم نقاط ❌";
+
+      div.innerHTML =
+        "<strong>" + actionText + "</strong><br>" +
+        "المستخدم: " + escapeHtml(transaction.userName) + "<br>" +
+        "البريد: " + escapeHtml(transaction.userEmail) + "<br>" +
+        "عدد النقاط: <strong>" + transaction.amount + "</strong><br>" +
+        "الرصيد: " + transaction.oldPoints + " ← " + transaction.newPoints + "<br>" +
+        "المشرف: " + escapeHtml(transaction.adminName) + "<br>" +
+        "التاريخ: " + escapeHtml(new Date(transaction.createdAt).toLocaleString("ar")) + "<br>" +
+        "<span class='badge'>رقم العملية: " + escapeHtml(transaction.id) + "</span>";
+
+      list.appendChild(div);
+    });
+
+  } catch (error) {
+    const status = document.getElementById("transactionsStatus");
+    status.textContent = "تعذر تحميل سجل العمليات.";
+    status.classList.add("error");
+  }
+}
+
+async function loadUsers() {
+  try {
+    const response = await fetch("/api/admin/users");
+
+    if (!response.ok) {
+      throw new Error("تعذر تحميل المستخدمين");
+    }
+
+    const data = await response.json();
+
+    allUsers = data.users || [];
+
+    document.getElementById("usersStatus").textContent =
+      "عدد المستخدمين: " + allUsers.length;
+
+    renderUsers(allUsers);
+
+  } catch (error) {
+    const box = document.getElementById("usersStatus");
+    box.textContent = "تعذر تحميل قائمة المستخدمين.";
+    box.classList.add("error");
+  }
+}
+
+function renderUsers(users) {
+  const list = document.getElementById("usersList");
+  list.innerHTML = "";
+
+  if (users.length === 0) {
+    list.innerHTML = "<p>لا يوجد مستخدمون.</p>";
+    return;
+  }
+
+  users.forEach(user => {
+    const div = document.createElement("div");
+    div.className = "user";
+
+    div.innerHTML =
+      "<strong>" + escapeHtml(user.name) + "</strong><br>" +
+      "البريد: " + escapeHtml(user.email) + "<br>" +
+      "النقاط: <strong>" + user.points + "</strong><br>" +
+      "الدور: " + escapeHtml(user.role) + "<br>" +
+      "الحالة: " + (user.active ? "نشط ✅" : "غير نشط ❌") +
+      "<br><span class='badge'>ID: " +
+      escapeHtml(user.id) +
+      "</span>" +
+
+      "<div class='pointsBox'>" +
+      "<input class='pointsInput' type='number' min='1' placeholder='عدد النقاط' id='points-" + escapeHtml(user.id) + "'>" +
+      "<br>" +
+      "<button class='addBtn' onclick='changePoints(\"" + escapeHtml(user.id) + "\", \"add\")'>إضافة نقاط</button>" +
+      "<button class='subtractBtn' onclick='changePoints(\"" + escapeHtml(user.id) + "\", \"subtract\")'>خصم نقاط</button>" +
+      "<div class='actionMessage' id='message-" + escapeHtml(user.id) + "'></div>" +
+      "</div>";
+
+    list.appendChild(div);
+  });
+}
+
+async function changePoints(userId, action) {
+  const input = document.getElementById("points-" + userId);
+  const message = document.getElementById("message-" + userId);
+  const amount = Number(input.value);
+
+  if (!Number.isInteger(amount) || amount <= 0) {
+    message.textContent = "أدخل عدد نقاط صحيح أكبر من صفر.";
+    message.style.color = "#9b2222";
+    return;
+  }
+
+  try {
+    const response = await fetch("/api/admin/users/" + encodeURIComponent(userId) + "/points", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        amount: amount,
+        action: action
+      })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok || !data.success) {
+      throw new Error(data.message || "حدث خطأ");
+    }
+
+    message.textContent = data.message + " — الرصيد الجديد: " + data.user.points;
+    message.style.color = "#216b21";
+
+    const user = allUsers.find(u => u.id === userId);
+    if (user) {
+      user.points = data.user.points;
+    }
+
+    input.value = "";
+    renderUsers(getFilteredUsers());
+
+  } catch (error) {
+    message.textContent = error.message;
+    message.style.color = "#9b2222";
+  }
+}
+
+function getFilteredUsers() {
+  const text = document.getElementById("searchInput").value.toLowerCase().trim();
+
+  return allUsers.filter(user =>
+    user.name.toLowerCase().includes(text) ||
+    user.email.toLowerCase().includes(text)
+  );
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+document.getElementById("searchInput").addEventListener("input", function() {
+  renderUsers(getFilteredUsers());
+});
+
+loadAdmin();
+</script>
+
+</body>
+</html>

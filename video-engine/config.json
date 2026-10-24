@@ -1,0 +1,11 @@
+{
+  "freeDailyPoints": 100,
+  "pointsPerMinute": 10,
+  "maxDurationMinutes": 10,
+  "sceneSeconds": 8,
+  "maxScenes": 100,
+  "outputFormat": "mp4",
+  "videoWidth": 1280,
+  "videoHeight": 720,
+  "fps": 24
+}

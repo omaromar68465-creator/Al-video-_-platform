@@ -1,0 +1,8 @@
+file '/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-audio-1791309520691-1.mp4'
+file '/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-audio-1791309539241-2.mp4'
+file '/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-audio-1791309555317-3.mp4'
+file '/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-audio-1791309571618-4.mp4'
+file '/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-audio-1791309587537-5.mp4'
+file '/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-audio-1791309603055-6.mp4'
+file '/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-audio-1791309622561-7.mp4'
+file '/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-audio-1791309635894-8.mp4'

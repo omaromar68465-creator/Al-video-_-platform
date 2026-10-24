@@ -1,0 +1,82 @@
+{
+  "title": "فيديو جديد",
+  "description": "ماعز اسود",
+  "videoType": "تلقائي",
+  "duration": 1,
+  "textOption": "بدون نص",
+  "extraText": "",
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "duration": 8,
+      "purpose": "المشهد 1 من فيديو عن: ماعز اسود",
+      "visualPrompt": "المشهد 1 من فيديو تلقائي: ماعز اسود. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-1.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790769820335-1.mp4"
+    },
+    {
+      "sceneNumber": 2,
+      "duration": 8,
+      "purpose": "المشهد 2 من فيديو عن: ماعز اسود",
+      "visualPrompt": "المشهد 2 من فيديو تلقائي: ماعز اسود. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-2.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790769837745-2.mp4"
+    },
+    {
+      "sceneNumber": 3,
+      "duration": 8,
+      "purpose": "المشهد 3 من فيديو عن: ماعز اسود",
+      "visualPrompt": "المشهد 3 من فيديو تلقائي: ماعز اسود. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-3.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790769851421-3.mp4"
+    },
+    {
+      "sceneNumber": 4,
+      "duration": 8,
+      "purpose": "المشهد 4 من فيديو عن: ماعز اسود",
+      "visualPrompt": "المشهد 4 من فيديو تلقائي: ماعز اسود. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-4.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790769864432-4.mp4"
+    },
+    {
+      "sceneNumber": 5,
+      "duration": 8,
+      "purpose": "المشهد 5 من فيديو عن: ماعز اسود",
+      "visualPrompt": "المشهد 5 من فيديو تلقائي: ماعز اسود. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-5.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790769877449-5.mp4"
+    },
+    {
+      "sceneNumber": 6,
+      "duration": 8,
+      "purpose": "المشهد 6 من فيديو عن: ماعز اسود",
+      "visualPrompt": "المشهد 6 من فيديو تلقائي: ماعز اسود. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-6.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790769889837-6.mp4"
+    },
+    {
+      "sceneNumber": 7,
+      "duration": 8,
+      "purpose": "المشهد 7 من فيديو عن: ماعز اسود",
+      "visualPrompt": "المشهد 7 من فيديو تلقائي: ماعز اسود. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-7.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790769902530-7.mp4"
+    },
+    {
+      "sceneNumber": 8,
+      "duration": 4,
+      "purpose": "المشهد 8 من فيديو عن: ماعز اسود",
+      "visualPrompt": "المشهد 8 من فيديو تلقائي: ماعز اسود. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "text": "",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-8.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790769915237-8.mp4"
+    }
+  ]
+}

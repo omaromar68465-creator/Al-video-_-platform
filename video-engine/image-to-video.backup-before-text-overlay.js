@@ -1,0 +1,110 @@
+const { spawn } = require("child_process");
+
+function createMotionClip(inputImage, outputVideo, duration = 8, sceneNumber = 1) {
+  return new Promise((resolve, reject) => {
+    const motionTypes = [
+      "zoom_in_strong",
+      "zoom_out_strong",
+      "pan_right_strong",
+      "pan_left_strong",
+      "pan_down_strong",
+      "pan_up_strong",
+      "diagonal_right_down",
+      "diagonal_left_up",
+      "diagonal_left_down",
+      "diagonal_right_up"
+    ];
+
+    const motion = motionTypes[(Number(sceneNumber) - 1) % motionTypes.length];
+    const frames = Math.max(Number(duration) * 24 - 1, 1);
+
+    let zoompan;
+
+    switch (motion) {
+      case "zoom_out_strong":
+        zoompan =
+          `zoompan=z='max(zoom-0.0025,1.0)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1280x720:fps=24`;
+        break;
+
+      case "pan_right_strong":
+        zoompan =
+          `zoompan=z='1.14':x='(iw-iw/zoom)*on/${frames}':y='ih/2-(ih/zoom/2)':d=1:s=1280x720:fps=24`;
+        break;
+
+      case "pan_left_strong":
+        zoompan =
+          `zoompan=z='1.14':x='(iw-iw/zoom)*(1-on/${frames})':y='ih/2-(ih/zoom/2)':d=1:s=1280x720:fps=24`;
+        break;
+
+      case "pan_down_strong":
+        zoompan =
+          `zoompan=z='1.14':x='iw/2-(iw/zoom/2)':y='(ih-ih/zoom)*on/${frames}':d=1:s=1280x720:fps=24`;
+        break;
+
+      case "pan_up_strong":
+        zoompan =
+          `zoompan=z='1.14':x='iw/2-(iw/zoom/2)':y='(ih-ih/zoom)*(1-on/${frames})':d=1:s=1280x720:fps=24`;
+        break;
+
+      case "diagonal_right_down":
+        zoompan =
+          `zoompan=z='1.15':x='(iw-iw/zoom)*on/${frames}':y='(ih-ih/zoom)*on/${frames}':d=1:s=1280x720:fps=24`;
+        break;
+
+      case "diagonal_left_up":
+        zoompan =
+          `zoompan=z='1.15':x='(iw-iw/zoom)*(1-on/${frames})':y='(ih-ih/zoom)*(1-on/${frames})':d=1:s=1280x720:fps=24`;
+        break;
+
+      case "diagonal_left_down":
+        zoompan =
+          `zoompan=z='1.15':x='(iw-iw/zoom)*(1-on/${frames})':y='(ih-ih/zoom)*on/${frames}':d=1:s=1280x720:fps=24`;
+        break;
+
+      case "diagonal_right_up":
+        zoompan =
+          `zoompan=z='1.15':x='(iw-iw/zoom)*on/${frames}':y='(ih-ih/zoom)*(1-on/${frames})':d=1:s=1280x720:fps=24`;
+        break;
+
+      default:
+        zoompan =
+          `zoompan=z='min(zoom+0.0025,1.16)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1280x720:fps=24`;
+        break;
+    }
+
+    const args = [
+      "-y",
+      "-loop",
+      "1",
+      "-i",
+      inputImage,
+      "-t",
+      String(duration),
+      "-vf",
+      "scale=1280:720:force_original_aspect_ratio=decrease," +
+        "pad=1280:720:(ow-iw)/2:(oh-ih)/2," +
+        zoompan,
+      "-c:v",
+      "libx264",
+      "-pix_fmt",
+      "yuv420p",
+      outputVideo
+    ];
+
+    const process = spawn("ffmpeg", args);
+    let errorOutput = "";
+
+    process.stderr.on("data", data => {
+      errorOutput += data.toString();
+    });
+
+    process.on("close", code => {
+      if (code === 0) {
+        resolve(outputVideo);
+      } else {
+        reject(new Error(errorOutput));
+      }
+    });
+  });
+}
+module.exports = { createMotionClip };

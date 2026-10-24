@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>استوديو الفيديو بالذكاء الاصطناعي</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #eef7ff;
+      color: #222;
+    }
+
+    header {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    header h1 {
+      margin-bottom: 12px;
+      margin: 0;
+      color: #7048b8;
+      font-size: 28px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: #666;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #444;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 150px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      resize: vertical;
+      font-size: 16px;
+      outline: none;
+    }
+
+    textarea:focus {
+      border-color: #7048b8;
+    }
+
+    select {
+      width: 100%;
+      padding: 13px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: white;
+      font-size: 16px;
+      margin-top: 8px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    button {
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      padding: 15px;
+      background: #7048b8;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background: #5d399d;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .feature {
+      padding: 18px;
+      background: #f7f3ff;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #777;
+    }
+
+    @media (max-width: 500px) {
+      .features {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>استوديو الفيديو بالذكاء الاصطناعي</h1><a href="/account.html" class="account-link">👤 حسابك</a>
+    <p>حوّل فكرتك إلى فيديو بسهولة</p>
+  </header>
+
+  <main class="container">
+
+    <div class="card">
+      <h2>🎬 إنشاء فيديو جديد</h2>
+
+      <label>وصف الفيديو</label>
+      <textarea
+        id="description"
+        placeholder="اكتب هنا القصة أو فكرة الفيديو التي تريد إنشاءها..."
+      ></textarea>
+
+      <label>نوع الفيديو</label>
+      <select id="videoType">
+        <option>تلقائي</option>
+        <option>أنمي</option>
+        <option>رسوم متحركة</option>
+        <option>تعليمي</option>
+        <option>قصصي</option>
+        <option>صور مع نص</option>
+      </select>
+
+      <label>مدة الفيديو</label>
+      <select id="duration">
+        <option value="1">دقيقة واحدة</option>
+        <option value="3">3 دقائق</option>
+        <option value="5">5 دقائق</option>
+        <option value="10">10 دقائق</option>
+      </select>
+
+      <label>صوت الراوي</label>
+      <select id="voice">
+        <option>بدون صوت</option>
+        <option>راوي عربي 1</option>
+        <option>راوي عربي 2</option>
+      </select>
+
+      <label>الكتابة على الفيديو</label>
+      <select id="textOption">
+        <option>بدون نص</option>
+        <option>عنوان فقط</option>
+        <option>نص كامل</option>
+        <option>نص مخصص</option>
+      </select>
+
+      <button onclick="createVideo()">إنشاء الفيديو</button>
+    </div>
+
+    <div class="card">
+      <h2>مميزات المنصة</h2>
+
+      <div class="features">
+        <div class="feature">🎨 توليد الصور</div>
+        <div class="feature">🎙️ صوت الراوي</div>
+        <div class="feature">📝 كتابة على الفيديو</div>
+        <div class="feature">🎞️ إخراج الفيديو</div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    منصة إنشاء الفيديو بالذكاء الاصطناعي
+  </footer>
+
+  <section id="myVideos" style="margin:20px; padding:20px; background:white; border-radius:15px;">
+    <h2 style="color:#6c4ab6; text-align:center;">فيديوهاتي</h2>
+
+    <div id="videoPlayerBox" style="display:none; margin-top:15px;">
+      <video id="generatedVideo" controls playsinline style="width:100%; max-width:720px; display:block; margin:auto; border-radius:12px;">
+        متصفحك لا يدعم تشغيل الفيديو.
+      </video>
+    </div>
+
+    <div id="videoProgressBox" style="display:none; margin-top:15px;">
+      <div style="width:100%; height:18px; background:#e5e5e5; border-radius:10px; overflow:hidden;">
+        <div id="videoProgressBar" style="width:0%; height:100%; background:#6c4ab6; transition:width .4s ease;"></div>
+      </div>
+      <p id="videoProgressText" style="text-align:center; margin:8px 0; color:#6c4ab6;">
+        0%
+      </p>
+    </div>
+
+    <p id="videoStatus" style="text-align:center; color:#666;">
+      لا توجد فيديوهات مكتملة بعد.
+    </p>
+  </section>
+
+  <script>
+    async function loadVideos() {
+      const status = document.getElementById("videoStatus");
+      const playerBox = document.getElementById("videoPlayerBox");
+      const player = document.getElementById("generatedVideo");
+
+      try {
+        const response = await fetch("/api/videos", {
+          credentials: "include"
+        });
+
+        const data = await response.json();
+
+        if (!response.ok || !data.success) {
+          status.textContent = data.message || "تعذر تحميل الفيديوهات";
+          return;
+        }
+
+        const completedVideo = data.videos.find(
+          video => video.status === "completed" && video.videoUrl
+        );
+
+        if (completedVideo) {
+          player.src = completedVideo.videoUrl;
+          playerBox.style.display = "block";
+          status.textContent = "تم إنشاء الفيديو بنجاح. يمكنك تشغيله الآن.";
+        } else if (data.videos.length > 0) {
+          status.textContent = "الفيديو قيد المعالجة، انتظر حتى يكتمل.";
+        } else {
+          status.textContent = "لا توجد فيديوهات مكتملة بعد.";
+        }
+
+      } catch (error) {
+        console.error(error);
+        status.textContent = "تعذر الاتصال بالخادم";
+      }
+    }
+
+    async function pollVideoJob(jobId) {
+      const status = document.getElementById("videoStatus");
+      const progressBox = document.getElementById("videoProgressBox");
+      const progressBar = document.getElementById("videoProgressBar");
+      const progressText = document.getElementById("videoProgressText");
+
+      progressBox.style.display = "block";
+      progressBar.style.width = "0%";
+      progressText.textContent = "0%";
+
+      while (true) {
+        try {
+          const response = await fetch("/api/jobs/" + encodeURIComponent(jobId), {
+            credentials: "include"
+          });
+
+          const data = await response.json();
+
+          if (!response.ok || !data.success) {
+            status.textContent = data.message || "تعذر متابعة حالة الفيديو";
+            return;
+          }
+
+          const job = data.job;
+          const progress = Math.max(0, Math.min(100, Number(job.progress) || 0));
+
+          progressBar.style.width = progress + "%";
+          progressText.textContent = progress + "%";
+          status.textContent = "جاري إنشاء الفيديو... " + progress + "%";
+
+          if (job.status === "completed") {
+            progressBar.style.width = "100%";
+            progressText.textContent = "100%";
+            status.textContent = "تم إنشاء الفيديو بنجاح. يمكنك تشغيله الآن.";
+            await loadVideos();
+            return;
+          }
+
+          if (job.status === "failed") {
+            status.textContent = "فشل إنشاء الفيديو: " + (job.error || "خطأ غير معروف");
+            return;
+          }
+
+          await new Promise(resolve => setTimeout(resolve, 2000));
+        } catch (error) {
+          console.error(error);
+          status.textContent = "تعذر الاتصال بالخادم أثناء متابعة الفيديو";
+          return;
+        }
+      }
+    }
+
+    async function createVideo() {
+      const description = document.getElementById("description").value.trim();
+
+      if (!description) {
+        alert("اكتب وصف الفيديو أولاً");
+        return;
+      }
+
+      const duration = Number(document.getElementById("duration").value);
+      const videoType = document.getElementById("videoType").value;
+      const voice = document.getElementById("voice").value;
+
+      try {
+        const response = await fetch("/api/videos", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          credentials: "include",
+          body: JSON.stringify({
+            title: "فيديو جديد",
+            description,
+            duration,
+            videoType,
+            extraText: "",
+            voice
+          })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok || !data.success) {
+          alert(data.message || "حدث خطأ أثناء إنشاء الفيديو");
+          return;
+        }
+
+        const status = document.getElementById("videoStatus");
+        status.textContent = "جاري بدء إنشاء الفيديو... 0%";
+
+        console.log("Video job:", data);
+
+        if (data.jobId) {
+          pollVideoJob(data.jobId);
+        } else {
+          status.textContent = "تم إنشاء المهمة، لكن لم يصل رقم المهمة.";
+        }
+
+      } catch (error) {
+        console.error(error);
+        alert("تعذر الاتصال بالخادم");
+      }
+    }
+    loadVideos();
+  </script>
+
+</body>
+</html>
+

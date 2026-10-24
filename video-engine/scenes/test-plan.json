@@ -1,0 +1,205 @@
+{
+  "title": "اختبار منصة الفيديو",
+  "description": "فيديو تعليمي عن دورة الماء في الطبيعة",
+  "videoType": "تعليمي",
+  "duration": 1,
+  "voice": "بدون صوت",
+  "textOption": "عنوان فقط",
+  "totalSeconds": 60,
+  "sceneCount": 8,
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "duration": 8,
+      "purpose": "المشهد 1 من فيديو عن: فيديو تعليمي عن دورة الماء في الطبيعة",
+      "visualPrompt": "مشهد 1 متناسق بصرياً مع فيديو تعليمي عن فيديو تعليمي عن دورة الماء في الطبيعة",
+      "continuity": {
+        "style": "تعليمي",
+        "recurringElements": [
+          "نفس الأسلوب البصري",
+          "نفس الألوان العامة",
+          "استمرارية العناصر بين المشاهد"
+        ],
+        "previousScene": null
+      },
+      "motion": {
+        "type": "slow_zoom",
+        "intensity": "low"
+      },
+      "narration": "",
+      "text": "",
+      "imagePath": "",
+      "clipPath": "",
+      "audioPath": ""
+    },
+    {
+      "sceneNumber": 2,
+      "duration": 8,
+      "purpose": "المشهد 2 من فيديو عن: فيديو تعليمي عن دورة الماء في الطبيعة",
+      "visualPrompt": "مشهد 2 متناسق بصرياً مع فيديو تعليمي عن فيديو تعليمي عن دورة الماء في الطبيعة",
+      "continuity": {
+        "style": "تعليمي",
+        "recurringElements": [
+          "نفس الأسلوب البصري",
+          "نفس الألوان العامة",
+          "استمرارية العناصر بين المشاهد"
+        ],
+        "previousScene": 1
+      },
+      "motion": {
+        "type": "pan_left",
+        "intensity": "low"
+      },
+      "narration": "",
+      "text": "",
+      "imagePath": "",
+      "clipPath": "",
+      "audioPath": ""
+    },
+    {
+      "sceneNumber": 3,
+      "duration": 8,
+      "purpose": "المشهد 3 من فيديو عن: فيديو تعليمي عن دورة الماء في الطبيعة",
+      "visualPrompt": "مشهد 3 متناسق بصرياً مع فيديو تعليمي عن فيديو تعليمي عن دورة الماء في الطبيعة",
+      "continuity": {
+        "style": "تعليمي",
+        "recurringElements": [
+          "نفس الأسلوب البصري",
+          "نفس الألوان العامة",
+          "استمرارية العناصر بين المشاهد"
+        ],
+        "previousScene": 2
+      },
+      "motion": {
+        "type": "pan_right",
+        "intensity": "low"
+      },
+      "narration": "",
+      "text": "",
+      "imagePath": "",
+      "clipPath": "",
+      "audioPath": ""
+    },
+    {
+      "sceneNumber": 4,
+      "duration": 8,
+      "purpose": "المشهد 4 من فيديو عن: فيديو تعليمي عن دورة الماء في الطبيعة",
+      "visualPrompt": "مشهد 4 متناسق بصرياً مع فيديو تعليمي عن فيديو تعليمي عن دورة الماء في الطبيعة",
+      "continuity": {
+        "style": "تعليمي",
+        "recurringElements": [
+          "نفس الأسلوب البصري",
+          "نفس الألوان العامة",
+          "استمرارية العناصر بين المشاهد"
+        ],
+        "previousScene": 3
+      },
+      "motion": {
+        "type": "slow_zoom_out",
+        "intensity": "low"
+      },
+      "narration": "",
+      "text": "",
+      "imagePath": "",
+      "clipPath": "",
+      "audioPath": ""
+    },
+    {
+      "sceneNumber": 5,
+      "duration": 8,
+      "purpose": "المشهد 5 من فيديو عن: فيديو تعليمي عن دورة الماء في الطبيعة",
+      "visualPrompt": "مشهد 5 متناسق بصرياً مع فيديو تعليمي عن فيديو تعليمي عن دورة الماء في الطبيعة",
+      "continuity": {
+        "style": "تعليمي",
+        "recurringElements": [
+          "نفس الأسلوب البصري",
+          "نفس الألوان العامة",
+          "استمرارية العناصر بين المشاهد"
+        ],
+        "previousScene": 4
+      },
+      "motion": {
+        "type": "slow_zoom",
+        "intensity": "low"
+      },
+      "narration": "",
+      "text": "",
+      "imagePath": "",
+      "clipPath": "",
+      "audioPath": ""
+    },
+    {
+      "sceneNumber": 6,
+      "duration": 8,
+      "purpose": "المشهد 6 من فيديو عن: فيديو تعليمي عن دورة الماء في الطبيعة",
+      "visualPrompt": "مشهد 6 متناسق بصرياً مع فيديو تعليمي عن فيديو تعليمي عن دورة الماء في الطبيعة",
+      "continuity": {
+        "style": "تعليمي",
+        "recurringElements": [
+          "نفس الأسلوب البصري",
+          "نفس الألوان العامة",
+          "استمرارية العناصر بين المشاهد"
+        ],
+        "previousScene": 5
+      },
+      "motion": {
+        "type": "pan_left",
+        "intensity": "low"
+      },
+      "narration": "",
+      "text": "",
+      "imagePath": "",
+      "clipPath": "",
+      "audioPath": ""
+    },
+    {
+      "sceneNumber": 7,
+      "duration": 8,
+      "purpose": "المشهد 7 من فيديو عن: فيديو تعليمي عن دورة الماء في الطبيعة",
+      "visualPrompt": "مشهد 7 متناسق بصرياً مع فيديو تعليمي عن فيديو تعليمي عن دورة الماء في الطبيعة",
+      "continuity": {
+        "style": "تعليمي",
+        "recurringElements": [
+          "نفس الأسلوب البصري",
+          "نفس الألوان العامة",
+          "استمرارية العناصر بين المشاهد"
+        ],
+        "previousScene": 6
+      },
+      "motion": {
+        "type": "pan_right",
+        "intensity": "low"
+      },
+      "narration": "",
+      "text": "",
+      "imagePath": "",
+      "clipPath": "",
+      "audioPath": ""
+    },
+    {
+      "sceneNumber": 8,
+      "duration": 8,
+      "purpose": "المشهد 8 من فيديو عن: فيديو تعليمي عن دورة الماء في الطبيعة",
+      "visualPrompt": "مشهد 8 متناسق بصرياً مع فيديو تعليمي عن فيديو تعليمي عن دورة الماء في الطبيعة",
+      "continuity": {
+        "style": "تعليمي",
+        "recurringElements": [
+          "نفس الأسلوب البصري",
+          "نفس الألوان العامة",
+          "استمرارية العناصر بين المشاهد"
+        ],
+        "previousScene": 7
+      },
+      "motion": {
+        "type": "slow_zoom_out",
+        "intensity": "low"
+      },
+      "narration": "",
+      "text": "",
+      "imagePath": "",
+      "clipPath": "",
+      "audioPath": ""
+    }
+  ],
+  "createdAt": "2026-09-23T09:07:03.527Z"
+}

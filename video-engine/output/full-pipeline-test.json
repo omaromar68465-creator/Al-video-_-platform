@@ -1,0 +1,47 @@
+{
+  "title": "رحلة قطرة ماء",
+  "description": "قصة تعليمية تشرح دورة الماء من البحر إلى السحب ثم نزول المطر وعودة الماء إلى الأرض",
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-1.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/pipeline-scene-1.mp4"
+    },
+    {
+      "sceneNumber": 2,
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-2.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/pipeline-scene-2.mp4"
+    },
+    {
+      "sceneNumber": 3,
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-3.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/pipeline-scene-3.mp4"
+    },
+    {
+      "sceneNumber": 4,
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-4.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/pipeline-scene-4.mp4"
+    },
+    {
+      "sceneNumber": 5,
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-5.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/pipeline-scene-5.mp4"
+    },
+    {
+      "sceneNumber": 6,
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-6.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/pipeline-scene-6.mp4"
+    },
+    {
+      "sceneNumber": 7,
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-7.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/pipeline-scene-7.mp4"
+    },
+    {
+      "sceneNumber": 8,
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-8.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/pipeline-scene-8.mp4"
+    }
+  ],
+  "createdAt": "2026-09-26T10:41:38.459Z"
+}

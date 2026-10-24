@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حسابك</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #eef7ff;
+      color: #222;
+    }
+
+    header {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      margin: 0;
+      color: #7048b8;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 15px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    }
+
+    input {
+      width: 100%;
+      padding: 14px;
+      margin: 8px 0 12px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: #7048b8;
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .message {
+      margin-top: 15px;
+      padding: 12px;
+      border-radius: 10px;
+      display: none;
+      background: #f3efff;
+    }
+
+    .points {
+      font-size: 24px;
+      font-weight: bold;
+      color: #7048b8;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      color: #7048b8;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>حسابك</h1>
+</header>
+
+<main class="container">
+
+  <div class="card">
+    <h2>إنشاء حساب</h2>
+
+    <input id="registerName" type="text" placeholder="الاسم">
+
+    <input id="registerEmail" type="email" placeholder="البريد الإلكتروني">
+
+    <input id="registerPassword" type="password" placeholder="كلمة المرور">
+
+    <button onclick="register()">إنشاء الحساب</button>
+
+    <div id="registerMessage" class="message"></div>
+  </div>
+
+
+  <div class="card">
+    <h2>تسجيل الدخول</h2>
+
+    <input id="loginEmail" type="email" placeholder="البريد الإلكتروني">
+
+    <input id="loginPassword" type="password" placeholder="كلمة المرور">
+
+    <button onclick="login()">تسجيل الدخول</button>
+
+    <div id="loginMessage" class="message"></div>
+
+    <div id="userInfo" style="display:none;">
+      <hr>
+      <h3>أهلًا بك <span id="userName"></span> 👋</h3>
+
+      <div class="points">
+        رصيدك: <span id="userPoints">0</span> نقطة
+      </div>
+    </div>
+  </div>
+
+  <a href="/">العودة إلى إنشاء الفيديو</a>
+
+</main>
+
+
+<script>
+
+async function register() {
+
+  const name = document.getElementById("registerName").value.trim();
+  const email = document.getElementById("registerEmail").value.trim();
+  const password = document.getElementById("registerPassword").value;
+
+  const message = document.getElementById("registerMessage");
+
+  try {
+
+    const response = await fetch("/api/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        password
+      })
+    });
+
+    const data = await response.json();
+
+    message.style.display = "block";
+    message.textContent = data.message;
+
+    if (data.success) {
+      document.getElementById("loginEmail").value = email;
+      document.getElementById("loginPassword").value = password;
+    }
+
+  } catch (error) {
+
+    message.style.display = "block";
+    message.textContent = "تعذر الاتصال بالخادم";
+  }
+}
+
+
+async function login() {
+
+  const email = document.getElementById("loginEmail").value.trim();
+  const password = document.getElementById("loginPassword").value;
+
+  const message = document.getElementById("loginMessage");
+
+  try {
+
+    const response = await fetch("/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        email,
+        password
+      })
+    });
+
+    const data = await response.json();
+
+    message.style.display = "block";
+    message.textContent = data.message;
+
+    if (data.success) {
+
+      document.getElementById("userInfo").style.display = "block";
+
+      document.getElementById("userName").textContent = data.user.name;
+
+      document.getElementById("userPoints").textContent = data.user.points;
+    }
+
+  } catch (error) {
+
+    message.style.display = "block";
+    message.textContent = "تعذر الاتصال بالخادم";
+  }
+}
+
+</script>
+
+</body>
+</html>

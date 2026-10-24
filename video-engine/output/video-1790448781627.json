@@ -1,0 +1,192 @@
+{
+  "title": "فيديو جديد",
+  "description": "سمكة تسبح",
+  "videoType": "تلقائي",
+  "duration": 3,
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "duration": 8,
+      "purpose": "المشهد 1 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 1 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-1.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448578737-1.mp4"
+    },
+    {
+      "sceneNumber": 2,
+      "duration": 8,
+      "purpose": "المشهد 2 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 2 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-2.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448583888-2.mp4"
+    },
+    {
+      "sceneNumber": 3,
+      "duration": 8,
+      "purpose": "المشهد 3 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 3 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-3.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448587946-3.mp4"
+    },
+    {
+      "sceneNumber": 4,
+      "duration": 8,
+      "purpose": "المشهد 4 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 4 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-4.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448593366-4.mp4"
+    },
+    {
+      "sceneNumber": 5,
+      "duration": 8,
+      "purpose": "المشهد 5 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 5 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-5.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448599691-5.mp4"
+    },
+    {
+      "sceneNumber": 6,
+      "duration": 8,
+      "purpose": "المشهد 6 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 6 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-6.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448603658-6.mp4"
+    },
+    {
+      "sceneNumber": 7,
+      "duration": 8,
+      "purpose": "المشهد 7 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 7 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-7.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448609644-7.mp4"
+    },
+    {
+      "sceneNumber": 8,
+      "duration": 8,
+      "purpose": "المشهد 8 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 8 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-8.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448618204-8.mp4"
+    },
+    {
+      "sceneNumber": 9,
+      "duration": 8,
+      "purpose": "المشهد 9 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 9 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-9.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448631034-9.mp4"
+    },
+    {
+      "sceneNumber": 10,
+      "duration": 8,
+      "purpose": "المشهد 10 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 10 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-10.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448646664-10.mp4"
+    },
+    {
+      "sceneNumber": 11,
+      "duration": 8,
+      "purpose": "المشهد 11 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 11 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-11.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448657609-11.mp4"
+    },
+    {
+      "sceneNumber": 12,
+      "duration": 8,
+      "purpose": "المشهد 12 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 12 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-12.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448667254-12.mp4"
+    },
+    {
+      "sceneNumber": 13,
+      "duration": 8,
+      "purpose": "المشهد 13 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 13 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-13.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448674301-13.mp4"
+    },
+    {
+      "sceneNumber": 14,
+      "duration": 8,
+      "purpose": "المشهد 14 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 14 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-14.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448683548-14.mp4"
+    },
+    {
+      "sceneNumber": 15,
+      "duration": 8,
+      "purpose": "المشهد 15 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 15 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-15.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448693470-15.mp4"
+    },
+    {
+      "sceneNumber": 16,
+      "duration": 8,
+      "purpose": "المشهد 16 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 16 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-16.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448702794-16.mp4"
+    },
+    {
+      "sceneNumber": 17,
+      "duration": 8,
+      "purpose": "المشهد 17 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 17 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-17.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448717898-17.mp4"
+    },
+    {
+      "sceneNumber": 18,
+      "duration": 8,
+      "purpose": "المشهد 18 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 18 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-18.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448726279-18.mp4"
+    },
+    {
+      "sceneNumber": 19,
+      "duration": 8,
+      "purpose": "المشهد 19 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 19 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-19.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448735277-19.mp4"
+    },
+    {
+      "sceneNumber": 20,
+      "duration": 8,
+      "purpose": "المشهد 20 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 20 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-20.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448740713-20.mp4"
+    },
+    {
+      "sceneNumber": 21,
+      "duration": 8,
+      "purpose": "المشهد 21 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 21 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-21.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448754460-21.mp4"
+    },
+    {
+      "sceneNumber": 22,
+      "duration": 8,
+      "purpose": "المشهد 22 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 22 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-22.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448769376-22.mp4"
+    },
+    {
+      "sceneNumber": 23,
+      "duration": 4,
+      "purpose": "المشهد 23 من فيديو عن: سمكة تسبح",
+      "visualPrompt": "المشهد 23 من فيديو تلقائي: سمكة تسبح. أنشئ صورة مرتبطة مباشرة بالمرحلة الحالية من القصة مع الحفاظ على استمرارية العناصر البصرية.",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-23.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790448778520-23.mp4"
+    }
+  ]
+}

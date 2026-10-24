@@ -1,0 +1,72 @@
+{
+  "title": "رحلة قطرة ماء",
+  "description": "قصة تعليمية تشرح دورة الماء من البحر إلى السحب ثم نزول المطر وعودة الماء إلى الأرض",
+  "videoType": "تعليمي",
+  "duration": 1,
+  "scenes": [
+    {
+      "sceneNumber": 1,
+      "duration": 8,
+      "purpose": "المرحلة 1 من دورة الماء",
+      "visualPrompt": "بحر واسع تحت الشمس، ماء البحر واضح، بداية دورة الماء، مشهد تعليمي واقعي",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-1.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790419644461-1.mp4"
+    },
+    {
+      "sceneNumber": 2,
+      "duration": 8,
+      "purpose": "المرحلة 2 من دورة الماء",
+      "visualPrompt": "ماء البحر يتبخر بفعل حرارة الشمس، بخار ماء يصعد من سطح البحر، مشهد تعليمي واقعي",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-2.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790419651814-2.mp4"
+    },
+    {
+      "sceneNumber": 3,
+      "duration": 8,
+      "purpose": "المرحلة 3 من دورة الماء",
+      "visualPrompt": "بخار الماء يصعد إلى السماء ويتجمع لتكوين سحب بيضاء، مشهد تعليمي واقعي",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-3.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790419657450-3.mp4"
+    },
+    {
+      "sceneNumber": 4,
+      "duration": 8,
+      "purpose": "المرحلة 4 من دورة الماء",
+      "visualPrompt": "قطرات ماء صغيرة تتجمع داخل السحب وتزداد كثافة السحابة، شرح بصري لدورة الماء",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-4.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790419664519-4.mp4"
+    },
+    {
+      "sceneNumber": 5,
+      "duration": 8,
+      "purpose": "المرحلة 5 من دورة الماء",
+      "visualPrompt": "سحب داكنة تمطر فوق الأرض، قطرات المطر تهبط بوضوح، مشهد تعليمي واقعي",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-5.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790419670180-5.mp4"
+    },
+    {
+      "sceneNumber": 6,
+      "duration": 8,
+      "purpose": "المرحلة 6 من دورة الماء",
+      "visualPrompt": "مياه المطر تتجمع على الأرض وتتدفق نحو الجداول والأنهار، مشهد تعليمي واقعي",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-6.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790419677069-6.mp4"
+    },
+    {
+      "sceneNumber": 7,
+      "duration": 8,
+      "purpose": "المرحلة 7 من دورة الماء",
+      "visualPrompt": "نهر يحمل المياه عائداً إلى البحر، منظر يوضح استمرار دورة الماء، مشهد تعليمي واقعي",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-7.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790419685348-7.mp4"
+    },
+    {
+      "sceneNumber": 8,
+      "duration": 4,
+      "purpose": "المرحلة 8 من دورة الماء",
+      "visualPrompt": "مشهد شامل يوضح دورة الماء من البحر إلى السحب ثم المطر والعودة إلى البحر، رسم تعليمي بصري",
+      "imagePath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/images/scene-8.jpg",
+      "clipPath": "/data/data/com.termux/files/home/ai-video-platform-experiment/video-engine/clips/render-1790419694314-8.mp4"
+    }
+  ]
+}
